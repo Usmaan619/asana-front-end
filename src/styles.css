@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(assets/fonts/Montserrat/static/Montserrat-Regular.ttf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url(assets/fonts/Montserrat/static/Montserrat-Medium.ttf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url(assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Outfit-Regular";
+  src: url(assets/fonts/Outfit/static/Outfit-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Karla-Bold";
+  src: url(assets/fonts/Karla/static/Karla-Bold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Nexa-ExtraLight";
+  src: url(assets/fonts/nexa/Nexa-ExtraLight.ttf) format("opentype");
+}
+
+.karlaFont {
+  font-family: "Karla-Bold" !important;
+}
+
+.nexaFont {
+  font-family: "Nexa-ExtraLight" !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+div,
+label,
+p,
+span {
+  /* font-family: "Nexa-ExtraLight"; */
+  font-family: "Montserrat-Regular";
+}
+
+/* You can add global styles to this file, and also import other style files */
+
+.terms-bg {
+  background: rgb(16, 107, 95);
+  background: linear-gradient(
+    119deg,
+    rgba(16, 107, 95, 1) 7%,
+    rgba(11, 11, 15, 1) 28%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(82, 46, 120, 1) 86%,
+    rgba(52, 49, 165, 1) 96%
+  );
+}
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #ff2521;
+  background-color: #f2dede;
+  border: 1px solid #eed3d7;
+}
+
+.parsley-errors-list {
+  margin: 8px 15px 0px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  color: #ff2521;
+  font-family: "Montserrat-Medium" !important;
+  transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s !important;
+}

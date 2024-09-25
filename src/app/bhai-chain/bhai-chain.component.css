@@ -1,0 +1,60 @@
+.main-color {
+  background: #000;
+}
+.content-heading-colour {
+  font-weight: 600;
+
+  background: linear-gradient(90deg, #b0ffa4 0%, #2b8e1b 56.5%, #b0ffa4 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chain-img-comnt {
+  width: 40%;
+}
+
+.coming-soon-card {
+  width: 50%;
+
+  min-height: 150px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  border: 1px solid #9ce196;
+}
+
+.card-img-cont {
+  width: 65%;
+}
+
+.card-img-cont-one {
+  width: 55%;
+}
+
+.top-green-bg {
+  position: absolute;
+  top: 400px;
+}
+
+.right-green-smoke {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .coming-soon-card {
+    width: 98%;
+
+    min-height: 150px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    border: 1px solid #9ce196;
+  }
+
+  .chain-img-comnt {
+    width: 100%;
+  }
+}

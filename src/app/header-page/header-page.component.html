@@ -1,0 +1,557 @@
+<!-- ======= Header ======= -->
+<header
+  id="header"
+  [ngClass]="{
+    headerScrolClass: headerScroll
+  }"
+  class="fixed-top d-flex align-items-center mobileViewHearderBlack"
+>
+  <div
+    class="container d-flex justify-content-between align-items-center mobile"
+  >
+    <!-- justify-content-between -->
+    <div (click)="mainlogo()">
+      <img class="bhaiPaylogo" src="assets/bhaiPay-svg/Transperant logo.png" />
+    </div>
+
+    <nav id="navbar" class="textHeader">
+      <div class="headerwidth d-flex">
+        <ul class="d-flex">
+          <li class="liTop">
+            <a
+              class="active karlaFont uppercase home"
+              (click)="hero()"
+              [routerLink]="['']"
+              >Home</a
+            >
+          </li>
+
+          <li class="liTop">
+            <div class="pointer">
+              <a class="active karlaFont uppercase" (click)="aboutUs()"
+                >About Us
+                <img width="8%" src="assets/new-images/Vector.svg" />
+              </a>
+            </div>
+
+            <div *ngIf="authSvc.aboutUsDropdownShow">
+              <div class="aboutUs-card shadow">
+                <div class="p-2">
+                  <div class="p-4 pt-0 pb-2">
+                    <div
+                      class="row align-items-center pointer"
+                      (click)="navigateToPage('team')"
+                    >
+                      <div class="col-md-4">
+                        <div>
+                          <div class="product-card-img-cont">
+                            <img
+                              class="w-100"
+                              src="assets/new-images/Creatorism Pitchdeck (2) 1.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div>
+                          <h5 class="karlaFont product-card-text mt-1">
+                            THE TEAM
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center">
+                    <div class="horizontal-border mt-2"></div>
+                  </div>
+
+                  <div class="p-4 pt-2 pb-2">
+                    <div
+                      class="row align-items-center pointer"
+                      (click)="navigateToPage('aboutUs')"
+                    >
+                      <div class="col-md-4">
+                        <div>
+                          <div class="product-card-img-cont">
+                            <img
+                              class="w-75"
+                              src="assets/new-images/about-us.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div>
+                          <h5 class="karlaFont product-card-text mt-1">
+                            ABOUT US
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="d-flex justify-content-center">
+                    <div class="horizontal-border mt-2"></div>
+                  </div> -->
+
+                  <!-- <div class="p-4 pt-2 pb-2">
+                    <div class="row align-items-center pointer" [routerLink]="['/investor']">
+                      <div class="col-md-4">
+                        <div>
+                          <div class="product-card-img-cont">
+                            <img class="w-75" src="assets/new-images/coin-svgrepo-com.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div>
+                          <h5 class="karlaFont product-card-text mt-1">
+                            INVESTORS
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="row align-items-center pointer"
+                      [routerLink]="['/investor']"
+                    >
+                      <div class="col-md-12">
+                        <div>
+                          <h5 class="karlaFont product-card-text mt-1">
+                            INVESTORS
+                          </h5>
+                        </div>
+                      </div>
+                    </div> 
+                   </div> -->
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="liTop">
+            <ng-container>
+              <div class="pointer">
+                <a class="active karlaFont uppercase" (click)="product()"
+                  >Products
+                  <img width="8%" src="assets/new-images/Vector.svg" />
+                </a>
+              </div>
+              <div *ngIf="authSvc.productDropdownShow">
+                <div class="product-card shadow">
+                  <div class="p-2">
+                    <div class="p-4 pb-2 pt-2">
+                      <div
+                        class="row align-items-center pointer"
+                        (click)="navigateToPage('bhaiPay')"
+                      >
+                        <div class="col-md-4">
+                          <div>
+                            <div class="product-card-img-cont">
+                              <img
+                                class="w-100"
+                                src="assets/new-images/bhaipay-Logo.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div>
+                            <h5 class="karlaFont product-card-text">
+                              BHAI PAY
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <div class="horizontal-border mt-2"></div>
+                    </div>
+
+                    <div class="p-4 pb-2 pt-2">
+                      <div
+                        class="row align-items-center pointer"
+                        (click)="navigateToPage('bhaiToken')"
+                      >
+                        <div class="col-md-4">
+                          <div>
+                            <div class="product-card-img-cont">
+                              <img
+                                class="w-100"
+                                src="assets/new-images/transparentAsset.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div>
+                            <h5 class="karlaFont product-card-text">
+                              <a> BHAI TOKEN </a>
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <div class="horizontal-border mt-2"></div>
+                    </div>
+
+                    <div class="p-4 pb-2 pt-2">
+                      <div
+                        class="row align-items-center pointer"
+                        (click)="navigateToPage('bhaiChain')"
+                      >
+                        <div class="col-md-4">
+                          <div>
+                            <div class="product-card-img-cont">
+                              <img
+                                class="w-100"
+                                src="assets/new-images/Satoshi - Adam emails (16) 1.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <div>
+                            <h5 class="karlaFont product-card-text">
+                              BHAI CHAIN
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </li>
+
+          <li class="liTop">
+            <a
+              class="active karlaFont uppercase"
+              (click)="closedDropdown()"
+              [routerLink]="['/investor']"
+              >Investors</a
+            >
+          </li>
+
+          <li class="liTop">
+            <a
+              href="https://investors.bhaifinance.com/"
+              target="_blank"
+              class="navbarfonts karlaFont"
+              (click)="closedDropdown()"
+              fragment="aboutUs"
+              >Invest</a
+            >
+          </li>
+          <li class="liTop">
+            <a class="active karlaFont uppercase" (click)="contactUsScroll()"
+              >Contact Us</a
+            >
+          </li>
+
+          <li class="liTop">
+            <a
+              class="active karlaFont uppercase"
+              (click)="closedDropdown()"
+              [routerLink]="['/blogs']"
+              >Blogs</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      class="liTop headericon"
+      style="display: flex; gap: 10%; position: absolute; right: 95px"
+    >
+      <img
+        class="cursor social-media-img"
+        (click)="twitter()"
+        src="assets/socialMedia/Twitter.png"
+        alt=""
+      />
+      <img
+        class="cursor social-media-img"
+        (click)="istagramLink()"
+        src="assets/socialMedia/IG.png"
+        alt=""
+      />
+      <img
+        class="cursor social-media-img"
+        src="assets/socialMedia/FB.png"
+        alt=""
+      />
+      <img
+        class="cursor social-media-img"
+        (click)="linkedinLink()"
+        src="assets/socialMedia/LinkedIN.png"
+        alt=""
+      />
+
+      <img
+        class="cursor social-media-img"
+        (click)="ticktok()"
+        src="assets/socialMedia/Tiktok.png"
+        alt=""
+      />
+
+      <img
+        class="cursor social-media-img"
+        (click)="teligram()"
+        src="assets/socialMedia/Group.png"
+        alt=""
+      />
+    </div>
+
+    <!-- .navbar -->
+    <nav id="navbar" class="navbar ms-auto">
+      <div>
+        <img
+          style="margin-left: 15px"
+          class="custome-mobile-nav-toggle hamberg hemb"
+          src="assets/bhaiPay-svg/icons8-hamburger.svg"
+          (click)="openNaveBar()"
+        />
+      </div>
+      <!-- box animate fadeInRight four -->
+      <!--  -->
+    </nav>
+  </div>
+  <div class="sideAnimation">
+    <ul [@openCloseAnimation]="navbar ? 'open' : 'close'" class="navbar-mobile">
+      <!-- <hr /> -->
+
+      <li class="contentCenter">
+        <a
+          class="navbarfonts karlaFont"
+          (click)="closeNaveBarHome()"
+          [routerLink]="['']"
+          >Home</a
+        >
+      </li>
+      <div class="dropdownLine"></div>
+
+      <li class="contentCenter">
+        <!-- <a class="navbarfonts karlaFont" (click)="closeNaveBarFeatures()" [routerLink]="['']"
+          fragment="features">Products</a> -->
+
+        <div class="tab justify-content-center">
+          <input type="checkbox" class="i" name="accordion-1" id="cb2" />
+          <label for="cb2" class="tab__label navbarfonts karlaFont"
+            >Products</label
+          >
+          <div class="tab__content">
+            <div class="dropdownLine"></div>
+            <li class="contentCenter">
+              <!-- href="#contactUs" -->
+              <a [routerLink]="['/bhaipay']" class="navbarfonts karlaFont"
+                >BHAI PAY</a
+              >
+            </li>
+            <div class="dropdownLine"></div>
+
+            <li class="contentCenter">
+              <!-- href="#contactUs" -->
+              <a
+                class="navbarfonts karlaFont"
+                href="https://www.bhaitoken.com/"
+                target="_blank"
+                >BHAI TOKEN</a
+              >
+            </li>
+            <div class="dropdownLine"></div>
+
+            <li class="contentCenter">
+              <!-- href="#contactUs" -->
+              <a class="navbarfonts karlaFont" [routerLink]="['/bhaichain']"
+                >BHAI CHAIN</a
+              >
+            </li>
+          </div>
+        </div>
+      </li>
+      <div class="dropdownLine"></div>
+
+      <li class="contentCenter">
+        <div class="tab justify-content-center">
+          <input type="checkbox" class="i" name="accordion-1" id="cb3" />
+          <label for="cb3" class="tab__label navbarfonts karlaFont"
+            >About Us</label
+          >
+          <div class="tab__content">
+            <div class="dropdownLine"></div>
+            <li class="contentCenter">
+              <a [routerLink]="['/team']" class="navbarfonts karlaFont"
+                >The Team</a
+              >
+            </li>
+            <div class="dropdownLine"></div>
+
+            <li class="contentCenter">
+              <a class="navbarfonts karlaFont" [routerLink]="['/about-us']"
+                >About Us</a
+              >
+            </li>
+            <div class="dropdownLine"></div>
+
+            <li class="contentCenter">
+              <a class="navbarfonts karlaFont" [routerLink]="['/investor']"
+                >Investors</a
+              >
+            </li>
+          </div>
+        </div>
+      </li>
+
+      <!-- <div class="dropdownLine"></div>
+      <li class="contentCenter">
+       
+
+        <div class="tab justify-content-center">
+          <input type="checkbox" class="i" name="accordion-1" id="cb2" />
+          <label for="cb2" class="tab__label navbarfonts karlaFont"
+            >Products</label
+          >
+          <div class="tab__content">
+            <div class="dropdownLine"></div>
+            <li class="contentCenter">
+              <a [routerLink]="['/bhaipay']" class="navbarfonts karlaFont"
+                >BHAI PAY</a
+              >
+            </li>
+            <div class="dropdownLine"></div>
+
+            <li class="contentCenter">
+              <a
+                class="navbarfonts karlaFont"
+                href="https://www.bhaitoken.com/"
+                target="_blank"
+                >BHAI TOKEN</a
+              >
+            </li>
+            <div class="dropdownLine"></div>
+
+            <li class="contentCenter">
+              <a class="navbarfonts karlaFont" [routerLink]="['/bhaichain']"
+                >BHAI CHAIN</a
+              >
+            </li>
+          </div>
+        </div>
+      </li>
+      <div class="dropdownLine"></div>
+
+      <li class="contentCenter">
+        <div class="tab justify-content-center">
+          <input type="checkbox" class="i" name="accordion-1" id="cb3" />
+          <label for="cb3" class="tab__label navbarfonts karlaFont"
+            >About Us</label
+          >
+          <div class="tab__content">
+            <div class="dropdownLine"></div>
+            <li class="contentCenter">
+              <a [routerLink]="['/team']" class="navbarfonts karlaFont"
+                >The Team</a
+              >
+
+            </li>
+            <div class="dropdownLine"></div>
+
+            <li class="contentCenter">
+              <a class="navbarfonts karlaFont" [routerLink]="['/about-us']"
+                >About Us</a
+              >
+            </li>
+            <div class="dropdownLine"></div>
+
+            <li class="contentCenter">
+              <a class="navbarfonts karlaFont" [routerLink]="['/investor']"
+                >Investors</a
+              >
+            </li>
+          </div>
+        </div>
+      </li> -->
+      <div class="dropdownLine"></div>
+
+      <li class="contentCenter">
+        <a
+          href="https://investors.bhaifinance.com/"
+          target="_blank"
+          class="navbarfonts karlaFont"
+          (click)="closeNaveBarContactUs()"
+          fragment="aboutUs"
+          >Invest</a
+        >
+      </li>
+
+      <div class="dropdownLine"></div>
+
+      <li class="contentCenter">
+        <!-- href="#contactUs" -->
+        <a
+          [routerLink]="['']"
+          class="navbarfonts karlaFont"
+          (click)="closeNaveBarContactUs()"
+          fragment="contact-us"
+          >Contact Us</a
+        >
+      </li>
+      <div class="dropdownLine"></div>
+
+      <!-- <li class="contentCenter">
+        <a class="navbarfonts karlaFont" [routerLink]="['/team']">The Team</a>
+      </li>
+
+      <div class="dropdownLine"></div>
+
+      <li class="contentCenter">
+        <a class="navbarfonts karlaFont" [routerLink]="['/about-us']"
+          >About Us</a
+        >
+      </li> -->
+      <div class="dropdownLine"></div>
+      <li class="contentCenter">
+        <a
+          class="navbarfonts karlaFont"
+          (click)="closeNaveBar()"
+          [routerLink]="['/blogs']"
+          fragment="aboutUs"
+          >Blogs</a
+        >
+      </li>
+
+      <div class="dropdownLine"></div>
+
+      <li class="contentCenter">
+        <a
+          class="navbarfonts karlaFont"
+          (click)="closeNaveBar()"
+          [routerLink]="['/privacy-Policy']"
+          >Privacy Policy</a
+        >
+      </li>
+      <div class="dropdownLine"></div>
+
+      <li class="contentCenter">
+        <a
+          class="navbarfonts karlaFont"
+          (click)="closeNaveBar()"
+          [routerLink]="['/terms-n-condition']"
+          >Terms and Conditions</a
+        >
+      </li>
+
+      <div class="mt-2 contentCenter sideAnimation"></div>
+    </ul>
+  </div>
+</header>

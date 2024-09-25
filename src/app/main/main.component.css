@@ -1,0 +1,45 @@
+.hero-section {
+  /* background: linear-gradient(
+      to right,
+      rgba(39, 70, 133, 0.8) 0%,
+      rgba(61, 179, 197, 0.8) 100%
+    ),url(../img/hero-bg.jpg) !important; */
+
+  /* background: rgb(128, 222, 156) !important;
+  background: linear-gradient(
+    119deg,
+    rgba(128, 222, 156, 1) 20%,
+    rgba(246, 226, 152, 1) 66%
+  ) !important; */
+
+  background: rgb(128, 255, 170) !important;
+  background: linear-gradient(
+    288deg,
+    rgba(128, 255, 170, 1) 11%,
+    rgba(255, 171, 77, 0.8) 38%,
+    rgba(244, 179, 255, 0.969188904494382) 78%
+  ) !important;
+  position: relative !important;
+}
+
+.bhaiPaylogo {
+  height: 70px;
+}
+
+.securityimgs {
+  height: 50%;
+}
+
+.headerScrolClass {
+  background: rgb(128, 255, 170);
+  background: linear-gradient(
+    288deg,
+    rgba(128, 255, 170, 1) 11%,
+    rgba(255, 171, 77, 1) 38%,
+    rgba(244, 179, 255, 1) 78%
+  );
+}
+
+.bhaiPayText {
+  margin-right: 390px;
+}

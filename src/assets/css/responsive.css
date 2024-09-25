@@ -1,0 +1,343 @@
+@media (min-width:992px) and (max-width:1199px){
+    :root {
+        --sidebar-width: 330px;
+    }
+    .sidebar-row {
+        padding: 35px;
+    }
+    .admin-body {
+        --sidebar-width: 330px;
+    }
+    .sidebarnav > ul > li > a {
+        padding: 9px 10px;
+        font-size: 16px;
+    }
+    .admin-sidebar .sidebar-row {
+        padding: 30px 20px;
+    }
+    section.segement-list-sec form {
+        margin-right: 0px;
+    }
+    .top_form {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    :root {
+        --sidebar-width: 320px;
+        --body-font-size:13px;
+    }
+    .admin-sidebar .sidebar-row {
+        padding: 15px;
+        text-align: left;
+    }
+    .admin-sidebar {
+        transform: translateX(-102%);
+        transition: all 0.5s;
+        z-index: 999;
+    }
+    .sidebar-collapsein .admin-sidebar{
+        transform: translateX(0);
+    }
+    .admin-body {
+        --sidebar-width: 290px;
+        padding: 0;
+        background-color: #fff;
+    }
+    .admin_body_head .logo a {
+        max-width: 180px;
+    }
+    .menu_top ul {
+        gap: 8px;
+        padding: 15px 0;
+    }
+    .dashboard_content {
+        padding: 20px 0px;
+    }
+    .menu_top ul li a {
+        padding: 6px 10px;
+    }
+    .headding h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .top_form_filter {
+        padding: 18px;
+    }
+    html table.table thead tr th {
+        font-size: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    html table.table tr th, html table.table tr td {
+        padding: 8px 10px;
+        line-height: 16px;
+    }
+    html table.table tr td {
+        font-size: 12px;
+    }
+
+
+}
+@media  (max-width:991px){
+    
+    .admin-sidebar {
+        transform: translateX(-102%);
+        transition: all 0.5s;
+        z-index: 999;
+    }
+    .sidebar-collapsein .admin-sidebar{
+        transform: translateX(0);
+    }
+    .admin-body {
+        --sidebar-width: 290px;
+        padding: 0;
+        background-color: #fff;
+    }
+    .admin-header-inner {
+        padding: 10px 12px 10px;
+        margin-bottom: 0;
+        background: var(--dark);
+    }
+    .admin-header input[type="search"] {
+        min-width: 200px;
+    }
+    .sidebarnav > ul > li > a {
+        padding: 8px 10px;
+        font-size: 14px;
+        padding-right: 35px;
+    }
+    .sidebarnav > ul > li > a .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .sidebarnav {
+        margin-top: 30px;
+    }
+    section.segement-list-sec form {
+        margin-right: 0px;
+    }
+    .top_form {
+        margin-right: 0px;
+    }
+}
+@media (max-width:767px){
+    :root {
+        --sidebar-width: 0;
+        --body-font-size:14px;
+    }
+    body{
+        background-color: var(--light-primary);
+    }
+    .admin-sidebar .sidebar-row {
+        padding: 15px;
+    }
+    body.login-page {
+        padding: 0 20px;
+    }
+    .login-content h2 {
+        margin-bottom: 30px;
+    }
+    .form-field {
+        margin: 0 0 12px;
+        line-height: 120%;
+    }
+    .login-content h2 {
+        font-size: 25px;
+    }
+    .logo {
+        max-width: 140px;
+    }
+    .login-page  .logo {
+        max-width:170px;
+        background: transparent;
+        margin: 0 auto 30px;
+    }
+    .login-content {
+        width: 100%
+    }
+    .top_form {
+        margin-right: 0;
+    }
+    label.form-label-control {
+        top: -7px;
+        font-size: 12px;
+    }
+    .top_form_filter .btn {
+        margin-top: 0;
+    }
+    html .btn {
+        font-size: 13px;
+        padding: 0 16px;
+        border-radius: 7px;
+        height: 36px;
+    }
+    .admin-body-content {
+        padding: 15px;
+    }
+    .dashboard_content {
+        padding: 20px 0;
+    }
+    .menu_top ul {
+        padding: 15px 16px 28px;
+    }
+    .menu_top ul {
+        padding: 10px 0;
+        gap: 8px;
+    }
+    .menu_top ul li a {
+        padding: 5px 12px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .admin_body_head .logo {
+        margin: 0 auto;
+        position: relative;
+        padding-right: 60px;
+        max-width: 200px;
+    }
+    .headding h2 {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    .top_form_filter {
+        padding: 14px;
+    }
+    body .form-control, body .form-select{
+        border-radius: 7px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .top_form_filter .form-group span {
+        right: 14px;
+        top: 13px;
+        font-size: 14px;
+    }
+    html table.table tr th, html table.table tr td {
+        padding: 6px 5px;
+        line-height: 16px;
+    }
+    html table.table thead tr th {
+        font-size: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    html table.table tr td {
+        font-size: 12px;
+    }
+    html .btn.btn-md {
+        font-size: 12px;
+        padding: 0 15px;
+        height: 34px;
+    }
+    .sidebarnav > ul > li > a {
+        padding: 6px 32px 6px 8px;
+        font-size: 14px;
+    }
+    .sidebarnav {
+        margin-top: 20px;
+    }
+    .sidebarnav > ul > li > a .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .admin-sidebar .navbar-toggle {
+        margin-left: auto;
+    }
+    .sidebarnav > ul > li ul.submenu-items li a {
+        font-size: 15px;
+    }
+
+}
+@media(min-width:992px){
+    .sidebar-collapsein .hamburger-icon{
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg)
+    }
+    
+    .sidebar-collapsein .hamburger-icon span:nth-child(1) {
+        left: 1px;
+        top: 5px;
+        width: 20px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transition-delay: 150ms;
+        transition-delay: 150ms
+    }
+    
+    .sidebar-collapsein .hamburger-icon span:nth-child(2) {
+        left: 3px;
+        top: 13px;
+        width: 10px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition-delay: 50ms;
+        transition-delay: 50ms
+    }
+    
+    .sidebar-collapsein .hamburger-icon span:nth-child(3) {
+        left: 9px;
+        top: 13px;
+        width: 10px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transition-delay: .1s;
+        transition-delay: .1s
+    }
+    .sidebar-collapsein.admin-body {
+        --sidebar-width: 70px;
+    }
+    .sidebar-collapsein .sidebarnav > ul > li > a{
+       font-size: 0;
+    }
+    .sidebar-collapsein .sidebarnav > ul > li > a .icon {
+        margin-right: 0;
+    }
+    .sidebar-collapsein .sidebarnav > ul > li > a {
+        padding: 8px 0px 8px 0px;
+        justify-content: center;
+    }
+    .sidebar-collapsein .sidebarnav > ul > li > a .text{
+        display: none;
+    }
+    .sidebar-collapsein .admin-sidebar .logo-icon {
+        display: block;
+    }
+    .sidebar-collapsein li.menu-parent > a[aria-expanded="false"]:after{
+        display: none;
+    }
+    .admin-sidebar .logo-icon{
+        display: none;
+    }
+    .sidebar-collapsein .simplebar-content .info_link{
+        display: none;
+    }
+    .sidebar-collapsein .admin-sidebar .sidebar-row {
+        padding: 10px;
+    }
+    .sidebar-collapsein .logo{
+        display: none;
+    }
+    .menu_top ul {
+        margin-left: 50px;
+    }
+    button#topnav-hamburger-icon {
+        position: absolute;
+        top: 19px;
+    }
+    .sidebar-collapsein ul.submenu-items {
+        display: none !important;
+    }
+    .sidebar-collapsein li.menu-parent > a[aria-expanded="true"]:after{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+

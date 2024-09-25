@@ -1,0 +1,629 @@
+.hero-section {
+  /* background: linear-gradient(
+        to right,
+        rgba(39, 70, 133, 0.8) 0%,
+        rgba(61, 179, 197, 0.8) 100%
+      ),url(../img/hero-bg.jpg) !important; */
+
+  /* background: rgb(128, 222, 156) !important;
+    background: linear-gradient(
+      119deg,
+      rgba(128, 222, 156, 1) 20%,
+      rgba(246, 226, 152, 1) 66%
+    ) !important; */
+  background: linear-gradient(288deg,
+      rgba(128, 255, 170, 1) 11%,
+      rgba(255, 171, 77, 0.8) 38%,
+      rgba(244, 179, 255, 0.969188904494382) 78%) !important;
+  position: relative !important;
+}
+
+.bhaiPaylogo {
+  /* height: 70px; */
+  /* height: 50px; */
+  /* height: 215px; */
+  height: 280px;
+}
+
+.securityimgs {
+  height: 50%;
+}
+
+.headerScrolClass {
+  /* background: rgb(128, 255, 170);
+  background: linear-gradient(
+    288deg,
+    rgba(128, 255, 170, 1) 11%,
+    rgba(255, 171, 77, 1) 38%,
+    rgba(244, 179, 255, 1) 78%
+  ) !important; */
+  background: black !important;
+}
+
+.headerScrolClass1 {
+  background: rgb(16, 107, 95);
+  background: linear-gradient(119deg,
+      rgba(16, 107, 95, 1) 7%,
+      rgba(11, 11, 15, 1) 28%,
+      rgba(0, 0, 0, 1) 76%,
+      rgba(82, 46, 120, 1) 86%,
+      rgba(52, 49, 165, 1) 96%);
+}
+
+/* .bhaiPayText {
+  margin-right: 185px;
+} */
+
+#contactUs {
+  transition: 10s;
+}
+
+.sidenavbar {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* background: rgba(1, 3, 91, 0.9); */
+  background: #111111;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile {
+  display: block;
+  position: absolute;
+  top: 71px;
+  /* right: 15px; */
+  bottom: 15px;
+  /* left: 15px; */
+  /* border-radius: 25px; */
+  /* background-color: #fff; */
+  /* background: #111111; */
+  /* background: rgb(48, 165, 147); */
+  /* background: linear-gradient(
+    172deg,
+    rgba(48, 165, 147, 50) 8%,
+    rgba(17, 17, 17) 49%,
+    rgba(137, 94, 192, 1) 87%
+  ); */
+
+  background: #010032;
+  overflow-y: auto;
+  transition: 0.3s;
+  margin-left: auto !important;
+  overflow: hidden !important;
+  /* width: 230px !important;
+  height: 330px !important; */
+}
+
+.cross-img {
+  height: 35px;
+  margin-left: 80%;
+}
+
+.headerText {
+  margin-right: auto;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.iconsTicktok {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.icons {
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.headericon {
+  display: block;
+}
+
+/* .custome-mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .custome-mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile .custome-mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+} */
+
+.hamberg {
+  display: none;
+}
+
+.textHeader {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .hamberg {
+    display: block;
+  }
+
+  .textHeader {
+    display: none;
+  }
+
+  .headericon {
+    display: none !important;
+  }
+
+  .mobileViewHearderBlack {
+    background: #000 !important;
+  }
+}
+
+@media (max-width: 280px) {
+  .hemb {
+    margin-left: 8px !important;
+  }
+
+  .bhaiPaylogo {
+    height: 215px;
+  }
+}
+
+.navbarfonts {
+  /* color: black !important; */
+  color: white !important;
+}
+
+.social-media-icons {
+  margin-top: 15%;
+  z-index: 10;
+}
+
+@media (max-width: 991px) {
+  .social-media-icons {
+    display: none;
+  }
+
+  .mobileViewHearderBlack {
+    background: #000 !important;
+  }
+
+  .headerScrolClass {
+    background: black !important;
+  }
+}
+
+/* @media (max-width: 1280px) {
+  .headerwidth {
+    width: 120%;
+  }
+} */
+
+/* dropdown header */
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/*  */
+ul li a:hover {
+  /* background-color: #106b5f; */
+  /* background: #111111; */
+  color: #9279b1 !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.liTop {
+  float: left;
+  /* width: 200px; */
+  /* width: 144px; */
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: transparent;
+  color: white;
+  opacity: 0.8;
+  /* margin-right: 5px; */
+  font-size: 1em;
+  display: block;
+}
+
+/* 
+.lichild {
+  float: left;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: black;
+  color: white;
+  opacity: 0.8;
+  font-size: 1em;
+  display: block;
+} */
+
+.sub {
+  display: none;
+}
+
+.main:hover .sub {
+  display: block;
+}
+
+.sideAnimation {
+  transition: 3s;
+  transform: rotate3d();
+}
+
+/* /////// sidebar animation */
+/* @import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+  background: #2c3e50;
+}
+
+
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+
+
+.four {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+
+
+
+
+
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+ */
+
+.contentCenter {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.dropdownLine {
+  /* margin: 1rem 0; */
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid;
+  opacity: 0.25;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.closeButton {
+  background: #895ec0;
+  color: white;
+  border-color: #895ec0;
+  height: 30px;
+  width: 50%;
+  min-width: 150px !important;
+  border-radius: 50px;
+}
+
+.product-card {
+  border: 1px solid #9ce196;
+
+  background: rgb(29, 61, 52);
+  background: linear-gradient(
+    0deg,
+    rgba(29, 61, 52, 1) 21%,
+    rgba(29, 61, 52, 0.6811099439775911) 67%
+  );
+  width: 200%;
+  height: 210px;
+  border-radius: 10px;
+}
+
+.aboutUs-card {
+  border: 1px solid #9ce196;
+
+  background: rgb(29, 61, 52);
+  background: linear-gradient(
+    0deg,
+    rgba(29, 61, 52, 1) 21%,
+    rgba(29, 61, 52, 0.6811099439775911) 67%
+  );
+  width: 200%;
+  height: 135px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.horizontal-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  width: 90%;
+}
+
+.product-card-img-cont {
+  width: 30px;
+}
+
+.product-card-text {
+  font-size: 16px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  padding-left: 30px;
+}
+
+:root {
+  --primary: #227093;
+  --secondary: #ff5252;
+  --background: #eee;
+  --highlight: #ffda79;
+  /* Theme color */
+  --theme: var(--primary);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Core styles/functionality */
+.tab .i {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.tab .i:checked ~ .tab__content {
+  max-height: 10rem;
+}
+
+/* Visual styles */
+.accordion {
+  color: var(--theme);
+  border: 2px solid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.tab__label,
+.tab__close {
+  display: flex;
+  color: white;
+  background: var(--theme);
+  cursor: pointer;
+}
+
+.tab__label {
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+
+.tab .i:checked + .tab__label::after {
+  transform: rotate(270deg);
+}
+
+.tab__content p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.tab__close {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.accordion--radio {
+  --theme: var(--secondary);
+}
+
+/* Arrow animation */
+.tab .i:not(:checked) + .tab__label:hover::after {
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(0.25rem);
+  }
+
+  75% {
+    transform: rotate(90deg) translate(-0.25rem);
+  }
+}
+
+/* Core styles/functionality */
+.tab1 .in {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab__content1 {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.tab1 .in:checked ~ .tab__content1 {
+  max-height: 10rem;
+}
+
+/* Visual styles */
+.accordion1 {
+  color: var(--theme);
+  border: 2px solid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.tab__label1,
+.tab__close1 {
+  display: flex;
+  color: white;
+  background: var(--theme);
+  cursor: pointer;
+}
+
+.tab__label1 {
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.tab__label1::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+
+.tab1 .in:checked + .tab__label1::after {
+  transform: rotate(270deg);
+}
+
+.tab__content1 p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.tab__close1 {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.accordion--radio1 {
+  --theme: var(--secondary);
+}
+
+/* Arrow animation */
+.tab1 .in:not(:checked) + .tab__label1:hover::after {
+  animation: bounce 0.5s infinite;
+}
+
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(0.25rem);
+  }
+
+  75% {
+    transform: rotate(90deg) translate(-0.25rem);
+  }
+}
+
+.social-media-img {
+  height: 20px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 320px) {
+  .mobile {
+    padding: 0px !important;
+    width: fit-content;
+  }
+
+  .bhaiPaylogo {
+    height: 250px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    /* max-width: 1205px; */
+    max-width: 1320px;
+  }
+}

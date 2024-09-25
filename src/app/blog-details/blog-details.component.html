@@ -1,0 +1,69 @@
+<app-header-page></app-header-page>
+<div class="main-color"></div>
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <div class="mt-5">
+        <div class="w-100 d-flex">
+          <h1 class="fw-bold">{{ blogData.blogName }}</h1>
+        </div>
+
+        <div class="d-flex gap-3 mb-2">
+          <div class="author-name gap-2">
+            <div class="blog-icon-container">
+              <img
+                class="w-100"
+                src="assets/bhaiPay-svg/blog-user.png"
+                alt=""
+              />
+            </div>
+            <div class="text-dark">{{ blogData?.authorName }}</div>
+          </div>
+
+          <div class="blog-date gap-2">
+            <div class="blog-icon-container">
+              <img
+                class="w-100"
+                src="assets/bhaiPay-svg/blog-time.png"
+                alt=""
+              />
+            </div>
+            <div class="text-dark">
+              {{ moment(blogData?.startDate).format("MMMM Do YYYY") }}
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <div>
+            <h4 class="text-dark">{{ blogData.description }}</h4>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <div>
+            <img class="blogImg" [src]="blogData.blogTitleImg" />
+          </div>
+        </div>
+
+        <div class="mt-5 mb-5">
+          <div class="w-100">
+            <p
+              class="blog-para text-dark w-100"
+              [innerHtml]="blogData?.about"
+            ></p>
+          </div>
+        </div>
+
+        <div class="mt-5 mb-5">
+          <div>
+            <p class="text-dark">#Tags</p>
+          </div>
+          <div>
+            <p class="text-dark">{{ blogData?.tags }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

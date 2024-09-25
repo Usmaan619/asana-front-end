@@ -1,0 +1,43 @@
+.hero-section {
+  /* background: rgb(128, 255, 170) !important;
+      background: linear-gradient(
+        288deg,
+        rgba(128, 255, 170, 1) 11%,
+        rgba(255, 171, 77, 0.8) 38%,
+        rgba(244, 179, 255, 0.969188904494382) 78%
+      ) !important; */
+
+  background: rgb(16, 107, 95);
+  background: linear-gradient(
+    119deg,
+    rgba(16, 107, 95, 1) 7%,
+    rgba(11, 11, 15, 1) 28%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(82, 46, 120, 1) 86%,
+    rgba(52, 49, 165, 1) 96%
+  );
+  position: relative !important;
+}
+
+.verifyImg {
+  margin-top: 80px;
+}
+
+.browsewrView {
+  display: block;
+}
+.mobileView {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .verifyImg {
+    margin-top: 0px;
+  }
+  .browsewrView {
+    display: none;
+  }
+  .mobileView {
+    display: block;
+  }
+}

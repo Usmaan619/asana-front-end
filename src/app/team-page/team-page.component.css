@@ -1,0 +1,142 @@
+.main-color {
+  background: #000;
+}
+
+.content-heading-colour {
+  font-weight: 600;
+
+  background: linear-gradient(90deg, #b0ffa4 0%, #2b8e1b 56.5%, #b0ffa4 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maaz-memon-card {
+  width: 100%;
+  min-height: 406px;
+  background: linear-gradient(
+    180deg,
+    rgba(205, 255, 197, 0.49) 0%,
+    rgba(61, 181, 41, 0.49) 100%
+  );
+
+  border: 1px solid #9ce196;
+  border-radius: 20px;
+}
+
+.team-card {
+  position: relative;
+  width: 100%;
+  /* min-height: 430px; */
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(205, 255, 197, 0.49) 0%,
+    rgba(61, 181, 41, 0.49) 100%
+  );
+
+  border: 1px solid #9ce196;
+  border-radius: 20px;
+}
+
+.maaz-img-cont {
+  border-radius: 50%;
+  border: 5px solid rgba(255, 181, 69, 1);
+  width: 80%;
+}
+
+.greenLink {
+  color: rgba(176, 255, 164, 1) !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.team-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 181, 69, 1);
+}
+
+.team-image-cont {
+  position: absolute;
+  width: 40%;
+  bottom: 0px;
+  top: -70px;
+}
+
+.col-top {
+  margin-top: 100px !important;
+}
+
+.team-bg {
+  position: absolute;
+
+  bottom: 280px;
+}
+
+.maaz-bg-img-cont {
+  /* position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 100px; */
+  position: absolute;
+  width: 100%;
+  /* top: 0px; */
+  /* left: -373px; */
+  right: 300px;
+  bottom: 0px;
+}
+
+.maaz-bg-img {
+  width: 700px;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1366px) {
+  .team-card {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 911px) {
+  .col-top {
+    margin-top: 150px !important;
+  }
+  .top-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .team-image-cont {
+    position: absolute;
+    width: 40%;
+    top: -90px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 320px) {
+  .team-image-cont {
+    top: -70px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 360px) {
+  .team-image-cont {
+    top: -60px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 540px) {
+  .team-image-cont {
+    top: -130px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 344px) and (max-width: 344px) {
+  .team-image-cont {
+    top: -60px;
+    bottom: 0px;
+  }
+}

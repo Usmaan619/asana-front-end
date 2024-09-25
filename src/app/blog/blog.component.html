@@ -1,0 +1,73 @@
+<app-header-page></app-header-page>
+<div class="main-color" (click)="closedDropdown()">
+  <main id="main">
+    <div class="container justify-content-center position-relative card-top">
+      <div>
+        <div>
+          <h1 class="text-white fw-bold">BLOGS</h1>
+          <h3 class="text-white fw-bold">INSIGT, THOUGHT, INDUSTRY</h3>
+          <h3 class="text-white fw-bold">TREND, MARKETING TIPS</h3>
+          <h3 class="text-white fw-bold">IT'S ALL HERE</h3>
+        </div>
+      </div>
+      <div class="row pb-3">
+        <div
+          class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mt-5 pointer"
+          *ngFor="let blog of allBlogs"
+          (click)="getBlogDetails(blog)"
+        >
+          <div class="card shadow">
+            <div>
+              <img [src]="blog.blogTitleImg" class="blog-card-img" />
+            </div>
+            <div class="p-2 pb-0">
+              <div>
+                <h5 class="fw-bold ellipsis text-dark">{{ blog?.blogName }}</h5>
+              </div>
+
+              <div>
+                <p class="fw-bold ellipsis text-dark">{{ blog.description }}</p>
+              </div>
+
+              <div class="d-flex mb-2 row">
+                <div class="author-name gap-2 col-md-6">
+                  <div class="blog-icon-container">
+                    <img
+                      class="w-100"
+                      src="assets/bhaiPay-svg/blog-user.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-dark ellipsis">{{ blog?.authorName }}</div>
+                </div>
+
+                <div class="blog-date gap-2 col-md-6">
+                  <div class="blog-icon-container">
+                    <img
+                      class="w-100"
+                      src="assets/bhaiPay-svg/blog-time.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="blog-date-para text-dark">
+                    {{ moment(blog?.startDate).format("MMMM Do YYYY") }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="seperate-line"></div>
+
+            <div class="p-2">
+              <button class="read-more">READ >></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="features mt-2">
+      <div class="container"></div>
+    </section>
+  </main>
+</div>

@@ -1,0 +1,64 @@
+.main-color {
+  background: rgb(16, 107, 95);
+  background: linear-gradient(
+    105deg,
+    rgba(16, 107, 95, 1) 7%,
+    rgba(11, 11, 15, 1) 41%,
+    rgba(0, 0, 0, 1) 61%,
+    rgba(82, 46, 120, 1) 77%,
+    rgba(52, 49, 165, 1) 96%
+  );
+  height: 100px;
+}
+
+.headerBg {
+  width: 100%;
+  height: 150px;
+
+  margin-top: -50px;
+
+  opacity: 0.9;
+  background: linear-gradient(
+    119deg,
+    #f90974 -2.11%,
+    #cc108c 15.8%,
+    #52c 63.58%
+  );
+}
+
+.container {
+  width: 95%;
+}
+
+.blog-para {
+  font-size: 20px;
+}
+
+.author-name {
+  display: flex;
+}
+.blog-icon-container {
+  width: 15px;
+}
+
+.blog-date {
+  display: flex;
+}
+
+.blogImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 80%;
+  }
+
+  .blogImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

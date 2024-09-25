@@ -1,0 +1,158 @@
+<main
+  class="main-content position-relative border-radius-lg p-3 tableContainer"
+>
+  <div class="container-fluid py-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="card mb-4">
+          <div *ngFor="let heading of table?.heading" class="card-header pb-0">
+            <h6>{{ heading?.title }}</h6>
+          </div>
+          <div class="card-body px-0 pt-0 pb-2">
+            <div class="table-responsive p-0">
+              <table class="table align-items-center mb-0">
+                <thead>
+                  <tr>
+                    <th
+                      *ngFor="let header of table?.headers"
+                      class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                    >
+                      {{ header?.name }}
+                    </th>
+                    <th class="text-secondary opacity-7"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let data of table?.data">
+                    <td *ngFor="let header of table?.headers">
+                      <div class="text-body" [ngSwitch]="true">
+                        <div
+                          class="text-body"
+                          *ngSwitchCase="header?.type === 'stringwithimage'"
+                        >
+                          <img class="mr-1" [src]="data[header?.imageKey]" />
+                          {{ data[header?.key] || "-" | titlecase }}
+                        </div>
+
+                        <div
+                          class="text-body"
+                          *ngSwitchCase="header?.type === 'date'"
+                        >
+                          <img class="mr-1" [src]="data[header?.imageKey]" />
+                          {{ data[header?.key] | date : "dd-MM-yyyy" }}
+                        </div>
+
+                        <div
+                          class="text-body"
+                          *ngSwitchCase="header?.type === 'dateTime'"
+                        >
+                          <img class="mr-1" [src]="data[header?.imageKey]" />
+                          {{ data[header?.key] }}
+                        </div>
+
+                        <div
+                          class="text-body"
+                          *ngSwitchCase="header?.type === 'checkbox'"
+                        >
+                          <input
+                            class=""
+                            type="checkbox"
+                            id="flexCheckDefault"
+                          />
+                        </div>
+
+                        <div
+                          class="text-body"
+                          *ngSwitchCase="header?.type === 'pill'"
+                        >
+                          <div
+                            *ngFor="let btn of header?.buttons"
+                            class="{{ btn?.btnClass }}"
+                          >
+                            <img class="mr-1" [src]="data[header?.imageKey]" />
+                            {{ btn?.label }}
+                          </div>
+                        </div>
+
+                        <div
+                          class="text-body"
+                          *ngSwitchCase="header?.type === 'iconForBoolean'"
+                        >
+                          <div *ngIf="data[header?.key]; else other_content">
+
+                            <td class="align-middle text-center text-sm">
+                              <span
+                                style="width: 85px"
+                                class="badge badge-sm bg-gradient-success"
+                                >Verified</span
+                              >
+                            </td>
+                          </div>
+
+                          <ng-template #other_content>
+                            <div class="">
+                              <td class="align-middle text-center text-sm">
+                                <span
+                                  style="width: 85px"
+                                  class="badge badge-sm bg-gradient-secondary"
+                                  >Un-verified</span
+                                >
+                              </td>
+                            </div>
+                          </ng-template>
+                        </div>
+
+                        <div
+                          class="text-body"
+                          *ngSwitchCase="header?.type === 'icon'"
+                        >
+                          <div class="btn-cont">
+                            <ng-container *ngFor="let btn of header?.buttons">
+                              <!-- [ngxPermissionsOnly]="btn.permissions" -->
+                              <ng-template
+                              >
+                                <i
+                                  type="button"
+                                  [class]="btn.class"
+                                  class="material-icons ml-2 click"
+                                  (click)="btn?.onClick(data)"
+                                  >{{ btn.icon }}</i
+                                >
+                              </ng-template>
+                            </ng-container>
+                          </div>
+                        </div>
+
+                        <div
+                          class="text-body"
+                          *ngSwitchCase="header?.type === 'multibutton'"
+                        >
+                          <ng-container *ngFor="let btn of header?.buttons">
+                            <!-- [ngxPermissionsOnly]="btn.permissions" -->
+                            <ng-template
+                            >
+                              <button
+                                class="btn btn-light {{ btn?.btnClass }}"
+                                (click)="btn?.onClick(data)"
+                              >
+                                {{ btn?.label }}
+                              </button>
+                            </ng-template>
+                          </ng-container>
+                        </div>
+
+                        <div class="text-body" *ngSwitchDefault>
+                          {{ data[header?.key] || "NA" }}
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

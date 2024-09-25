@@ -1,0 +1,752 @@
+/* .hero-section {
+  background: rgb(16, 107, 95);
+  background: linear-gradient(
+    119deg,
+    rgba(16, 107, 95, 1) 7%,
+    rgba(11, 11, 15, 1) 28%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(82, 46, 120, 1) 86%,
+    rgba(52, 49, 165, 1) 96%
+  );
+  position: relative !important;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.bhaiPaylogo {
+  height: 70px;
+}
+
+.securityimgs {
+  height: 50%;
+}
+
+.headerScrolClass {
+  background: rgb(128, 255, 170);
+  background: linear-gradient(
+    288deg,
+    rgba(128, 255, 170, 1) 11%,
+    rgba(255, 171, 77, 1) 38%,
+    rgba(244, 179, 255, 1) 78%
+  );
+}
+
+.bhaiPayText {
+  margin-right: 390px;
+}
+
+.submitBtn {
+  background: #806bff;
+  color: white;
+  border-color: #806bff;
+  height: 35px;
+  width: 19%;
+  border-radius: 50px;
+  margin-top: 2%;
+}
+
+.inputs.input:focus {
+  color: white;
+  border: 1px solid #806bff;
+  box-shadow: 0 0 5px #806bff, 0 0 5px #806bff, 0 0 10px #806bff,
+    0 0 200px #806bff;
+}
+
+.inputs.input:focus-visible {
+  outline: 0 !important;
+}
+
+.template {
+  margin-bottom: 0px;
+}
+
+.glow {
+  background: #522e78;
+
+  box-shadow: 0 0 5px #806bff, 0 0 5px #806bff, 0 0 10px #806bff,
+    0 0 200px #806bff;
+
+  color: white;
+  border: transparent;
+  height: 35px;
+  width: 19%;
+  border-radius: 50px;
+  margin-top: 4%;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.inputBorder {
+  border-color: #404454;
+}
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 2s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+:host {
+  --color: black;
+  --hover: #806bff;
+}
+
+.hero-section {
+  background: rgb(16, 107, 95);
+  background: linear-gradient(
+    119deg,
+    rgba(16, 107, 95, 1) 7%,
+    rgba(11, 11, 15, 1) 28%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(82, 46, 120, 1) 86%,
+    rgba(52, 49, 165, 1) 96%
+  );
+  position: relative !important;
+}
+
+.bhaiPaylogo {
+  height: 70px;
+}
+
+.securityimgs {
+  height: 50%;
+}
+
+.headerScrolClass {
+  background: rgb(128, 255, 170);
+  background: linear-gradient(
+    288deg,
+    rgba(128, 255, 170, 1) 11%,
+    rgba(255, 171, 77, 1) 38%,
+    rgba(244, 179, 255, 1) 78%
+  );
+}
+
+.bhaiPayText {
+  margin-right: 390px;
+}
+
+.submitBtn {
+  background: #806bff;
+  color: white;
+  border-color: #806bff;
+  height: 35px;
+  width: 19%;
+  border-radius: 50px;
+  margin-top: 2%;
+}
+
+.inputs.input:focus {
+  color: white;
+  border: 1px solid #806bff;
+  box-shadow: 0 0 5px #806bff, 0 0 5px #806bff, 0 0 10px #806bff,
+    0 0 200px #806bff;
+}
+
+.inputs.input:focus-visible {
+  outline: 0 !important;
+}
+
+.template {
+  margin-bottom: 0px;
+}
+
+.glow {
+  background: #522e78;
+
+  box-shadow: 0 0 5px #806bff, 0 0 5px #806bff, 0 0 10px #806bff,
+    0 0 200px #806bff;
+
+  color: white;
+  border: transparent;
+  height: 35px;
+  width: 19%;
+  border-radius: 50px;
+  margin-top: 4%;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.inputBorder {
+  border-color: #404454;
+}
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1.5s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+:host {
+  --color: black;
+  --hover: #806bff;
+}
+
+@media (max-width: 991px) {
+  .waitlist {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+  }
+  .hero-section .iphone-wrap .phone-1 {
+    margin-left: 15px;
+  }
+  .iphone-wrap {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh;
+    min-height: 1600px !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh;
+    min-height: 1600px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh;
+    min-height: 1500px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-font {
+    font-size: 170% !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-font {
+    font-size: 200% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-font {
+    font-size: 150% !important;
+  }
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh !important;
+    min-height: 1200px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section .iphone-wrap .phone-1 {
+    margin-left: 0px;
+  }
+  .main-font {
+    font-size: 125% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section .iphone-wrap .phone-2,
+  .hero-section .iphone-wrap .phone-1 {
+    position: absolute;
+
+    top: 2px;
+  }
+}
+
+@media (max-width: 287px) {
+  .main-font {
+    font-size: 110% !important;
+  }
+}
+@media (max-width: 255px) {
+  .main-font {
+    font-size: 90% !important;
+  }
+}
+
+@media (max-width: 395px) {
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh !important;
+    min-height: 1150px !important;
+  }
+}
+
+.main-font {
+  font-size: 250%;
+}
+.mt {
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.bitCoinImg {
+  width: 100px;
+  height: 70px;
+}
+
+.bitCoinMain {
+  display: flex;
+} */
+
+.hero-section {
+  /* background: rgb(16, 107, 95);
+  background: linear-gradient(
+    119deg,
+    rgba(16, 107, 95, 1) 7%,
+    rgba(11, 11, 15, 1) 28%,
+    rgba(0, 0, 0, 1) 76%,
+    rgba(82, 46, 120, 1) 86%,
+    rgba(52, 49, 165, 1) 96%
+  ); */
+  position: relative !important;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+/* .bhaiPaylogo {
+  height: 70px;
+} */
+
+/* .securityimgs {
+  height: 50%;
+} */
+
+/* .headerScrolClass {
+  background: rgb(128, 255, 170);
+  background: linear-gradient(
+    288deg,
+    rgba(128, 255, 170, 1) 11%,
+    rgba(255, 171, 77, 1) 38%,
+    rgba(244, 179, 255, 1) 78%
+  );
+} */
+
+/* .bhaiPayText {
+  margin-right: 390px;
+} */
+
+/* .submitBtn {
+  background: #806bff;
+  color: white;
+  border-color: #806bff;
+  height: 35px;
+  width: 19%;
+  border-radius: 50px;
+  margin-top: 2%;
+} */
+
+.inputs.input:focus {
+  color: white;
+  border: 1px solid #806bff;
+  box-shadow: 0 0 5px #806bff, 0 0 5px #806bff, 0 0 10px #806bff,
+    0 0 200px #806bff;
+}
+
+.inputs.input:focus-visible {
+  outline: 0 !important;
+}
+
+.main-cont {
+  position: relative;
+}
+
+.slider-bg-cont {
+  position: absolute;
+  top: 400px;
+  right: 0px;
+  z-index: 1;
+}
+
+.slider-bg-second-img {
+  width: 350px;
+}
+
+.waitlist-input {
+  font-family: Nexa-ExtraLight !important;
+  border-radius: 25px;
+  background: #b0ffa4;
+  color: black !important;
+  padding-left: 30px !important;
+}
+
+.waitlist-input::placeholder {
+  color: black !important;
+}
+
+.phone-blur-img {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  top: 0px;
+  left: 0px;
+  /* top: -50px; */
+  /* right: 40px; */
+}
+
+.template {
+  margin-bottom: 0px;
+}
+
+.glow {
+  background: #522e78;
+
+  box-shadow: 0 0 5px #806bff, 0 0 5px #806bff, 0 0 10px #806bff,
+    0 0 200px #806bff;
+
+  color: white;
+  border: transparent;
+  height: 35px;
+  width: 19%;
+  border-radius: 50px;
+  margin-top: 4%;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.inputBorder {
+  border-color: #404454;
+}
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 2s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+:host {
+  --color: black;
+  --hover: #806bff;
+}
+
+.hero-section {
+  background: #000;
+  position: relative !important;
+}
+
+.bhaiPaylogo {
+  height: 70px;
+}
+
+.securityimgs {
+  height: 50%;
+}
+
+.headerScrolClass {
+  background: rgb(128, 255, 170);
+  background: linear-gradient(
+    288deg,
+    rgba(128, 255, 170, 1) 11%,
+    rgba(255, 171, 77, 1) 38%,
+    #f4b3ff 78%
+  );
+}
+
+.bhaiPayText {
+  margin-right: 390px;
+}
+
+.submitBtn {
+  background: #217d00;
+  /* background: linear-gradient(288deg,
+      rgba(128, 255, 170, 1) 11%,
+      rgba(255, 171, 77, 1) 38%,
+      rgb(128, 255, 170) 78%); */
+  color: white;
+  border: 1px solid #a5ff85;
+  height: 35px;
+  width: 19%;
+  border-radius: 50px;
+  margin-top: 2%;
+}
+
+.inputs.input:focus {
+  color: white;
+  border: 1px solid #806bff;
+  box-shadow: 0 0 5px #806bff, 0 0 5px #806bff, 0 0 10px #806bff,
+    0 0 200px #806bff;
+}
+
+.inputs.input:focus-visible {
+  outline: 0 !important;
+}
+
+.template {
+  margin-bottom: 0px;
+}
+
+.glow {
+  background: #522e78;
+
+  box-shadow: 0 0 5px #806bff, 0 0 5px #806bff, 0 0 10px #806bff,
+    0 0 200px #806bff;
+
+  color: white;
+  border: transparent;
+  height: 35px;
+  width: 19%;
+  border-radius: 50px;
+  margin-top: 4%;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.inputBorder {
+  border-color: #404454;
+}
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1.5s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+:host {
+  --color: black;
+  --hover: #806bff;
+}
+
+.bhai-finance-img-cont {
+  width: 50%;
+}
+
+.phone-bg-img {
+  width: 400px;
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1366px) {
+  .phone-col {
+    /* margin-top: 85px !important; */
+    margin-top: 0px !important;
+  }
+
+  .slide-img-width {
+    width: 90% !important;
+  }
+
+  .slider-bg-second-img {
+    width: 395px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .waitlist {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+  }
+
+  .hero-section .iphone-wrap .phone-1 {
+    margin-left: 15px;
+  }
+
+  .iphone-wrap {
+    margin-top: 2rem;
+  }
+
+  .img-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-bg-cont {
+    position: absolute;
+    top: 70%;
+    right: 0px;
+    z-index: 1;
+  }
+
+  .slider-bg-second-img {
+    width: 65%;
+  }
+}
+
+@media (max-width: 912px) {
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh;
+    min-height: 1600px !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh;
+    min-height: 1600px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh;
+    min-height: 1500px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-font {
+    font-size: 170% !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-font {
+    font-size: 200% !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-font {
+    font-size: 150% !important;
+    text-align: center;
+  }
+
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh !important;
+    min-height: 1200px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section .iphone-wrap .phone-1 {
+    margin-left: 0px;
+  }
+
+  .main-font {
+    font-size: 125% !important;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section .iphone-wrap .phone-2,
+  .hero-section .iphone-wrap .phone-1 {
+    position: absolute;
+
+    top: 2px;
+  }
+}
+
+@media (max-width: 287px) {
+  .main-font {
+    font-size: 110% !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 255px) {
+  .main-font {
+    font-size: 90% !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 395px) {
+  .hero-section,
+  .hero-section > .container > .row {
+    height: 100vh !important;
+    min-height: 1150px !important;
+  }
+}
+
+.main-font {
+  /* font-size: 250%; */
+  font-size: 25px;
+}
+
+.mt {
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.bitCoinImg {
+  width: 100px;
+  height: 70px;
+}
+
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, #a5ff85bd 0%, #217d00d9 100%);
+  border: none;
+  /* box-shadow: 0 0.7em 1.5em -0.5em #14a73e98; */
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 6px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}

@@ -1,0 +1,22 @@
+.imagesradius {
+  border-radius: 3%;
+}
+.privacy-bg {
+  background: #010032;
+}
+
+.mt-5 {
+  margin-top: 4rem !important;
+}
+
+.bgTable {
+  background: transparent !important;
+}
+
+.font {
+  font-size: 16px;
+}
+
+.overFlow {
+  overflow-y: hidden;
+}

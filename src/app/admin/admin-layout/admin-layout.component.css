@@ -1,0 +1,76 @@
+@import "../../../assets/adminDashboard/css/soft-ui-dashboard.css?v=1.0.7";
+@import "../../../assets/adminDashboard/css/nucleo-svg.css";
+
+@import "../../../assets/adminDashboard/css/nucleo-icons.css";
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+div,
+span,
+label,
+button,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a {
+  color: #344767 !important;
+}
+
+.navbar a {
+  justify-content: flex-start !important;
+}
+
+.navbar-brand-img-logo {
+  max-height: 4rem !important;
+}
+
+.navbar-vertical.navbar-expand-xs .navbar-collapse {
+  display: block;
+  overflow: auto;
+  height: calc(100vh - 285px);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(
+    -55deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(235, 163, 82, 0.8777682948179272) 65%
+  ) !important;
+}
+
+.navbar-vertical .navbar-nav > .nav-item .nav-link.active .icon {
+  background: linear-gradient(310deg, #f53939 0%, #fbcf33 100%) !important;
+}
+.bg-gradient-primary {
+  background: linear-gradient(310deg, #f53939 0%, #fbcf33 100%) !important;
+}
+
+.ng-select .ng-select-container {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d2d6da;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.ng-select.ng-select-single .ng-select-container {
+  height: 40px;
+}
+.form-control {
+  height: 40px;
+}
+
+li :hover {
+  border-radius: 0.5rem !important;
+}

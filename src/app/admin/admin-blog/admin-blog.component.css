@@ -1,0 +1,104 @@
+.bg-gradient-secondary {
+  background-image: linear-gradient(
+    141deg,
+    rgba(215, 210, 210, 0.8407738095238095) 0%,
+    rgba(255, 31, 31, 0.8) 33%
+  );
+}
+
+.bg-gradient-danger {
+  background-image: linear-gradient(310deg, #ea0606 0%, #ff667c 100%);
+}
+
+.fontWhite {
+  color: #ffffff !important;
+}
+
+.bg-gradient-success {
+  background-image: linear-gradient(310deg, #17ad37 0%, #98ec2d 100%);
+}
+
+.ft-white {
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  background-image: linear-gradient(
+    310deg,
+    #f53939 0%,
+    #fbcf33 100%
+  ) !important;
+}
+
+/* tab css  */
+
+.tab-container-nav {
+  width: fit-content;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  padding: 2px;
+
+  background-color: #dadadb;
+  border-radius: 9px;
+}
+
+.indicator {
+  content: "";
+  width: 130px;
+  height: 28px;
+  background: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 9;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  transition: all 0.2s ease-out;
+}
+
+.tab {
+  width: 130px;
+  height: 28px;
+  position: absolute;
+  z-index: 99;
+  outline: none;
+  opacity: 0;
+}
+
+.tab_nav_label {
+  margin: 0;
+
+  width: 130px;
+  height: 28px;
+
+  position: relative;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+
+  font-size: 0.75rem;
+  opacity: 0.6;
+
+  cursor: pointer;
+}
+
+.tab--1:checked ~ .indicator {
+  left: 2px;
+}
+
+.tab--2:checked ~ .indicator {
+  left: calc(130px + 2px);
+}
+
+.tab--3:checked ~ .indicator {
+  left: calc(130px * 2 + 2px);
+}
+/* tab css end  */

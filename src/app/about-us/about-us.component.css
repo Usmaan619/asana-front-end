@@ -1,0 +1,47 @@
+.imagesradius {
+  border-radius: 3%;
+}
+.aboutUs-bg {
+  /* background: #010032; */
+  background: black;
+}
+
+.content-heading-colour {
+  font-weight: 600;
+  background: linear-gradient(90deg, #b0ffa4 0%, #2b8e1b 56.5%, #b0ffa4 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+  background: rgb(29, 61, 52);
+  background: linear-gradient(
+    0deg,
+    rgba(29, 61, 52, 1) 21%,
+    rgba(29, 61, 52, 0.6811099439775911) 67%
+  );
+  border: 1px solid #9ce196;
+  border-radius: 10px;
+}
+
+.bhaifinancelogo-card-img-cont {
+  max-width: 140px;
+}
+
+.vertical-border {
+  border-left: 2px solid white;
+}
+
+.aboutUs-text {
+  text-align: justify !important;
+  font-size: 25px;
+}
+
+@media (max-width: 991px) {
+  .padding-in-mobile {
+    padding: 0px !important;
+  }
+}

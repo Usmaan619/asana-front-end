@@ -1,0 +1,18 @@
+.blackColour {
+  color: black !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.unAuth-Container {
+  padding: 5%;
+  padding-top: 1% !important;
+
+  display: flex;
+  justify-content: center;
+}
+
+.cont-center {
+  display: flex;
+  justify-content: center;
+}
